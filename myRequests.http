@@ -1,1 +1,19 @@
-GET http://localhost:5253/
+GET http://localhost:5253/todos
+
+###
+POST http://localhost:5253/todos
+content-type: application/json
+
+{
+  "id": 1,
+  "name": "Daniel",
+  "dueDate": "2024-12-31",
+  "isCompleted": false
+}
+###
+GET http://localhost:5253/todos/2
+###
+GET http://localhost:5253/tasks/2
+
+###
+DELETE http://localhost:5253/todos/2
